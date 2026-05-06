@@ -28,10 +28,21 @@ print("valor:", numeros_interio)
 #TYPE () mostra qual é o tipo da variavelag
 print("tipo:", type (numeros_interio))
 
+#exemplo 2 - numero decimal
+numero_decimal = 3.13
+print("tipo:", type(numero_decimal))
 
+#exemplo 3 - numeros cmplexos
+#um número complexo possui duas partes:
+#numero normal (numero normal)
+  #parte imaginária (mutiplicad por j)
+#estruturada geral;
+#numero =a +bj
 
-       
+# a = parte real
+# parte imaginária      
+# j = unidade imaginária
 
-
-
-
+numero_complexo = 2+3j
+print("valor:", numero_complexo)
+print("tipo:", type(numero_complexo))
