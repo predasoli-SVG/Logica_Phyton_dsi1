@@ -25,7 +25,7 @@ numeros_interio =10
 #mostrando o valor!!
 print("valor:", numeros_interio)
 
-#TYPE () mostra qual é o tipo da variavel
+#TYPE () mostra qual é o tipo da variavelag
 print("tipo:", type (numeros_interio))
 
 
