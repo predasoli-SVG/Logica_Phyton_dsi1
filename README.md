@@ -1,69 +1,87 @@
 # EX1
-# O usuário digitou "25" como sua idade em um formulário.
-# Converta para inteiro e calcule a idade que ele terá
-# daqui a 5 anos.
-idade = int (input("digite a sua idade.."))
-resultado= (idade + 5)
-print("tipo:", type (resultado))
-print (resultado)
+# Use a função type() para verificar
+# o tipo da variável "ano" com valor 2024.
+ano = 2024 
+print ("tipo:", type (ano))
+print("\n\n")
 
 # EX2
-# Converta o número de ponto flutuante 7.999
-# para inteiro e observe o resultado.
-valor =int (7.999)
-print ("tipo:", type (valor))
-
+# Verifique se o número 3.14159
+# é do tipo float usando isinstance().
+numero = 3.14159
+print (isinstance(numero, float))
+print("\n\n")
 # EX3
-# Converta a string "-3.14" para float
-# e multiplique o resultado por 2.
-valor = float("-3.14")
-print("tipo:", type (valor))
-print(valor *  2)
-
+# Compare se o tipo de 100
+# é igual ao tipo de True.
+numero = 100
+print("compração:", type(100)) == (type(True))
+print("\n\n")
 # EX4
-# Tente converter a string "cento e vinte"
-# para inteiro e observe o que acontece.
-valor = int  ("cento e vinte")
-valor ("classe:", type (valor))
-#VALUE ERROR!!
-
+# Use isinstance() para verificar
+# se True pode ser considerado int.
+print("considerado:", (isinstance (True, int)))
+print("\n\n")
 # EX5
-# Converta o número 42 para string
-# e concatene com a palavra " respostas".
-numero = 42
-numero_str = str(numero)
-print("Ex5:", numero_str + " respostas")
+# Verifique se o resultado de 5/2
+# é do tipo float usando type() e isinstance().
+resultado1 = 5/2
+print("resultado:", (isinstance (resultado1, float)))
 
+resultado2 = 5/2
+print("resultado:", type (resultado2))
 
 # EX6
-# Use a função complex() para criar
-# um número complexo com parte real 3
-# e parte imaginária 5.
-numero_complexo = 3 + 5j
-print ("valor:", numero_complexo)
-print("tipo:", type(numero_complexo))
+# Crie uma função que recebe um valor
+# e imprime "É número!" se for int, float ou complex.
+def verificar(dado):
+
+    if isinstance(dado, (int, float, complex)):
+        print("é numérico")
+    
+    else:
+        print("não é numérico")
+
+verificar(42)
+verificar("texto")
 # EX7
-# Converta o número 0 para booleano
-# e mostre o resultado.
-valor = 0 
-booleano = bool(valor)
-print ("resultado:", booleano)
+# Compare type() e isinstance()
+# para verificar se um booleano
+# é considerado inteiro.
+
+valor = True
+if type (valor) == int:
+    print("type, booleano é inteiro")
+else:
+    print("type, não é booleano")
+
 
 # EX8
-# Converta o número -100 para booleano
-# e mostre o resultado.
-valor = -100
-booleano = bool (valor)
-print ("resultado:", booleano)
-
+# Descubra o tipo do número 3+4j
+# usando type().
+valor = 3+ 4j
+print("tipo:", type (valor))
 # EX9
-# Converta o número 3.1415 para inteiro
-# e depois para string, tudo em uma única linha.
-print(str(int(3.1415)))
-
+# Verifique se o valor None
+# é do tipo NoneType usando isinstance().
+valor = None
+if isinstance(valor, type (None)):
+    print("é tipo nonetype")
+else:
+    print("não é tipo nonetype")
 # EX10
-# Some um número inteiro (5) com um float (2.3)
-# e verifique qual é o tipo do resultado.
-valor = int (5)
-valor1 = float (2.3)
-print ("resultado:", valor + valor1)
+# Verifique se o número 3.0
+# é int, float ou complex usando isinstance()
+# e depois teste especificamente se é int.
+numero = 3.0
+if isinstance(numero, (int, float, complex)):
+    print("É um número")
+
+else:
+    print("Não é um número")
+
+if isinstance(numero, int):
+    print("É do tipo int")
+
+else:
+    print("Não é do tipo int")
