@@ -1,87 +1,105 @@
+# ======================================================
+# MÓDULO 1 — CRIAÇÃO DE STRINGS
+# ======================================================
+
 # EX1
-# Use a função type() para verificar
-# o tipo da variável "ano" com valor 2024.
-ano = 2024 
-print ("tipo:", type (ano))
-print("\n\n")
+# Crie uma variável chamada texto1 com o valor "Logica"
+# usando aspas duplas e exiba o conteúdo.
+texto1 = "logica"
+print(texto1)
 
 # EX2
-# Verifique se o número 3.14159
-# é do tipo float usando isinstance().
-numero = 3.14159
-print (isinstance(numero, float))
-print("\n\n")
+# Crie uma variável chamada texto2 com o valor
+# 'Eu sou top em python' usando aspas simples e exiba.
+texto2 = 'eu sou top em python'
+print(texto2)
+
 # EX3
-# Compare se o tipo de 100
-# é igual ao tipo de True.
-numero = 100
-print("compração:", type(100)) == (type(True))
-print("\n\n")
+# Crie uma string usando aspas simples que contenha
+# aspas duplas dentro do texto: copa "padrão fifa".
+print('"padrão fifa"')
+
 # EX4
-# Use isinstance() para verificar
-# se True pode ser considerado int.
-print("considerado:", (isinstance (True, int)))
-print("\n\n")
+# Crie uma string usando aspas duplas que contenha
+# aspas simples dentro do texto: copa 'padrão fifa'.
+print("'padrão fifa'")
+
+# ======================================================
+# MÓDULO 2 — STRINGS MULTILINHA
+# ======================================================
+
 # EX5
-# Verifique se o resultado de 5/2
-# é do tipo float usando type() e isinstance().
-resultado1 = 5/2
-print("resultado:", (isinstance (resultado1, float)))
-
-resultado2 = 5/2
-print("resultado:", type (resultado2))
-
+# Crie uma string multilinha representando um menu
+# com as opções:
+# -A  Exibe ajuda
+# -E  Execute agora, quero jogar!
+texto = """\
+A- Exibe ajuda
+-E execute agora, quero joagr!
+"""
+print(texto)
 # EX6
-# Crie uma função que recebe um valor
-# e imprime "É número!" se for int, float ou complex.
-def verificar(dado):
+# Crie uma string multilinha contendo um poema
+# com três versos.
+menu= """\
+O sol acordou meio preguiçoso hoje,
+deixei o café esfriar no balcão
+e decidi só ver a vida passar.
+"""
+print(menu)
 
-    if isinstance(dado, (int, float, complex)):
-        print("é numérico")
-    
-    else:
-        print("não é numérico")
+# ======================================================
+# MÓDULO 3 — CONCATENAÇÃO AUTOMÁTICA
+# ======================================================
 
-verificar(42)
-verificar("texto")
 # EX7
-# Compare type() e isinstance()
-# para verificar se um booleano
-# é considerado inteiro.
-
-valor = True
-if type (valor) == int:
-    print("type, booleano é inteiro")
-else:
-    print("type, não é booleano")
-
-
+# Use concatenação automática de literais para unir
+# as palavras "Volei" e "top!".
+print("volei " "é top!" )
 # EX8
-# Descubra o tipo do número 3+4j
-# usando type().
-valor = 3+ 4j
-print("tipo:", type (valor))
+# Concatene automaticamente as strings
+# "Python", " é ", "demais" em uma única string.
+print("Python é  demais!")
+
+# ======================================================
+# MÓDULO 4 — STRINGS COMO SEQUÊNCIAS
+# ======================================================
+
 # EX9
-# Verifique se o valor None
-# é do tipo NoneType usando isinstance().
-valor = None
-if isinstance(valor, type (None)):
-    print("é tipo nonetype")
-else:
-    print("não é tipo nonetype")
+# Atribua "software" a uma variável chamada st
+# e mostre a primeira letra da string.
+st = "software"
+print("primeira letra: ", st [0])  
 # EX10
-# Verifique se o número 3.0
-# é int, float ou complex usando isinstance()
-# e depois teste especificamente se é int.
-numero = 3.0
-if isinstance(numero, (int, float, complex)):
-    print("É um número")
+# Usando a mesma string "software",
+# mostre a última letra.
+print("ultima letra: ", st [-1])  
+# EX11
+# Mostre os caracteres do índice 1 até o índice 4
+# (sem incluir o 4) da string "software ".
+print( st [1:4])
 
-else:
-    print("Não é um número")
-
-if isinstance(numero, int):
-    print("É do tipo int")
-
-else:
-    print("Não é do tipo int")
+# EX12
+# Mostre os caracteres do início até o índice 3
+# da string "software".
+print(st [0:3])
+# EX13
+# Mostre os caracteres do índice 2 até o final
+# da string "software".
+print(st [2:7])
+# EX14
+# Mostre o tamanho da string "software"
+# usando a função len().
+print("tamanho de:", len(st), "letras")
+# EX15
+# Acesse o último caractere de "software"
+# usando índice positivo (sem usar -1).
+print(st [7])
+# EX16
+# Mostre os caracteres que estão nos índices pares
+# da string "software".
+print(st[::2])
+#tive que pesquisar essa professo 
+# EX17
+# Inverta a string "software".
+print(st [::-1])
