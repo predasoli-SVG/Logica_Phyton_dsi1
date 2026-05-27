@@ -62,6 +62,62 @@ print("do inicio até 3 ", st [:3])
 
 print("do 2 até o final:", st [2:1])
 
+#---------------------------
+# 5) OPERAÇÕES COM STRINGES 
+#----------------------------
+#Python permite várias operações com strings 
+print("m" in st)
+#signficado que a letra "m" existe dentro da string
+
+print("x" not in st)
+#significado que "x" não existe na string
+
+print("m" * 20)
+#mutiplicado repete a string
+
+print("m" + "maracana")
+#operador + concatena strings
+
+#---------------------------
+# 6) STRINGES SÃO IMUTÁVEIS 
+#----------------------------
+
+ #strings não podem ser alterados diretamente!!
+ #isso signfica que o conteudo original não muda.
+ #o que acontece é a criação de uma nova string.
+
+texto = "python 3"
+#método replace cria uma string
+texto = texto.replace("3", "2")
+
+print(texto)
+
+#---------------------------
+# 7) MÉTODOS IMPORTANTES 
+#----------------------------
+#   Strings possuem vários métodos úteis
+
+cidade = "maracana"
+#coloca a primiera linha maiuscula
+print(cidade.capitalize())
+
+#conta quantas vezes aquela letra
+print(cidade.count("a"))
+
+#verificar se começa com  "m"
+print(cidade.startswith("m"))
+
+#verificar se termina com "z"
+print(cidade.endswith("z"))
+
+frase = "copa de 2002"
+print(frase.split(" "))
+
+#---------------------------
+# 8) FORMATAÇÃO DE STRING
+#----------------------------
+
+
 print("tamanho ", len(st))
 
 
